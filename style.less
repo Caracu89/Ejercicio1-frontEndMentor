@@ -3,7 +3,7 @@ body {
     color: white;
 }
 
-button {
+button.regBtn {
     font-family: 'Poppins', sans-serif;
     font-size: 1.2em;
     color: hsl(257, 40%, 49%);;
@@ -18,47 +18,9 @@ a:visited, a:active{
     color: white;
 }
 
-.facebook {
-    padding: 10px 14px;
-    border: 1px solid white;
-    border-radius: 30px;
-}
-
-.twitter{
-    padding: 10px 12px;
-    border: 1px solid white;
-    border-radius: 30px;
-}
-
-.instagram {
-    padding: 10px 12px;
-    border: 1px solid white;
-    border-radius: 30px;
-}
 
 header {
     margin-bottom: 5%;
-}
-
-.container {
-    margin: 3% 5% 0% 5%;
-}
-
-.main {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.mockups {
-    order: 1;
-    width: 100%;
-    height: auto;
-    margin-right: 3%;
-}
-
-.text-body {
-    order: 2;
 }
 
 h1 {
@@ -87,6 +49,45 @@ footer {
     justify-content: space-around;  
 }
 
+.container {
+    margin: 3% 5% 0% 5%;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.mockups {
+    order: 1;
+    width: 100%;
+    height: auto;
+    margin-right: 3%;
+}
+
+.text-body {
+    order: 2;
+}
+
+.facebook {
+    padding: 10px 14px;
+    border: 1px solid white;
+    border-radius: 30px;
+}
+
+.twitter{
+    padding: 10px 12px;
+    border: 1px solid white;
+    border-radius: 30px;
+}
+
+.instagram {
+    padding: 10px 12px;
+    border: 1px solid white;
+    border-radius: 30px;
+}
+
 // 820 para abajo (cellphones & tablets)
 @media only screen and (max-width: 392px) {
     body {
@@ -94,8 +95,52 @@ footer {
         background-repeat: no-repeat;
     }
     
+    header {
+        margin: 10% 0% 16% 0%;
+    }
+
+    h1 {
+        font-size: 1.3em;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    p {
+        font-size: 0.95em;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 98%;
+    }
+    
     .main {
         flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logo {
+        width: 40%;
+    }
+
+    .mockups {
+        margin-bottom: 10%;
+    }
+
+    button.regBtn {
+        margin: 10% auto 25% auto;
+        // achicar
+    }
+
+    .btnWrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
     }
  }
 
@@ -108,9 +153,7 @@ footer {
     .main {
         flex-wrap: wrap;
     }
-} 
-// entre 820 y 1080 (medium screens)
-@media only screen and (min-width: 820px) { }
+}
 
 // 1080 para arriba (big screens)
 @media only screen and (min-width: 1080px) {
