@@ -12,6 +12,7 @@ button.regBtn {
   border: none;
   box-shadow: 5px 5px 10px hsla(0, 0%, 0%, 0.5);
 }
+a,
 a:visited,
 a:active {
   color: white;
